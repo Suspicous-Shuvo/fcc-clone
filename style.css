@@ -1,29 +1,39 @@
-ul {
+
+/* Style the navigation menu */
+.navLists {
+
+    list-style-type: none;
+    width:100%;
+    background-color: #555;
+    overflow: auto;
     margin: 0;
     padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: rgb(255, 234, 0);
 }
 
-li {
-
-    display: inline;
-    /*  By default, <li> elements are block elements. Here, we remove the line breaks before and after each list item, to display them on one line */
+/* Navigation links */
+.navLists li a {
     float: left;
-    /*  Use float to get block elements to float next to each other */
+    padding: 12px;
+    color: #fff;
+    font-size: 20px;
+    width: 22%;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
 }
 
-li a {
-    display: block;
-    /* display: block -Allows us to specify padding(and height, width, margins, etc. if you want) */
-    padding: 8px;
-    color: rgb(0, 0, 0);
+/* Add a background color on mouse-over */
+.navLists a:hover {
+    background-color: black;
 }
-li a:hover {
-    background-color: rgb(184, 180, 180)
-}
-/* Add an "active" class to the current link to let the user know which page he/she is on: */
-a.active {
-    background-color: rgb(184, 180, 180);
+/* Style the current/active link */
+.navLists a.active {
+    background-color: #04AA6D;
+  }
+  
+/* THis part style "Things cats love: lists */
+
+ul.catsFavoriteThings li {
+    background-color: #fff;
+    list-style-type: disc;
+    font-style: italic;
 }
